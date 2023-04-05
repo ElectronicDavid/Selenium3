@@ -23,6 +23,7 @@ public class App {
         WebElement searchBox = driver.findElement(By.name("search"));
         searchBox.sendKeys("ChatGpt");
         searchBox.sendKeys(Keys.RETURN);
+        System.out.println("El flujo paso por esta linea");
 
         // Wait for the page to load and print the title
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
